@@ -44,11 +44,13 @@
 
     div#formulario > p {
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 
     div#formulario > h1 {
         font-size: 2em;
     }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {

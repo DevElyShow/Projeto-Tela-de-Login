@@ -33,12 +33,13 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #0D0D0D;
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -65,20 +66,57 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+form > div.campo {
+    background-position: center;
+    background-color: #967e09;
+    border: 2px solid #F2CB05;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
 
-form > input [type=submit] {
+div.campo> label  {
+    display: none;
+}
+
+div.campo > i {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    border: 20px;
+}
+
+div.campo > input {
+    background-color: #ffffff;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    transform: translate(-10px);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+div > form > input[type=submit] {
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
+    margin: 1px;
     background-color: #0D0D0D ;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
-form >input [type=submit]>:hover{
-background-color:#F2CB05 ;
+div > form > input[type=submit]a:hover{
+background-color:#ffffff ;
 }
 
 form > a.botao {
