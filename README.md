@@ -3,6 +3,12 @@
 Projeto de **Tela de Login responsiva**, desenvolvido com **HTML5 e CSS3**, focado na abordagem **Mobile First** e em boas práticas de experiência do usuário.
 
 A aplicação simula o fluxo de autenticação de um portal, realizando **validações de campos obrigatórios** e redirecionando o usuário para uma nova página após o preenchimento correto dos dados.
+---
+
+## 🌐 Deploy do Projeto
+
+🔗 Acesse o projeto online:  
+https://develyshow.github.io/Projeto-Tela-de-Login/
 
 ---
 
