@@ -1,35 +1,13 @@
-@charset "UTF-8";
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
 
-/* Tablet */
-@media screen and (min-width: 768px) {
-    .login-card {
-        flex-direction: row;
-        width: 750px;
-        height: 450px;
-    }
+  .login-image {
+    height: 200px;
+  }
 
-    .login-image {
-        width: 50%;
-        height: 100%;
-    }
-
-    .login-form-area {
-        width: 50%;
-    }
-}
-
-/* Desktop grande */
-@media screen and (min-width: 1200px) {
-    .login-card {
-        width: 900px;
-        height: 500px;
-    }
-
-    .login-form-area h1 {
-        font-size: 2em;
-    }
-
-    .login-form-area p {
-        font-size: 1.1em;
-    }
+  .login-form {
+    padding: 30px;
+  }
 }

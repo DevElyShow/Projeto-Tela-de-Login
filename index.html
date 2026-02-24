@@ -3,92 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Sócio - Sport Club</title>
+  <title>Portal do Leão | Login 🦁</title>
 
-  <!-- Ícones -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/estilo.css">
-  <link rel="stylesheet" href="assets/media-query.css"> 
+  <link rel="stylesheet" href="assets/media-query.css">
 </head>
 
 <body>
+
   <main class="login-container">
 
     <section class="login-card">
 
-      <!-- IMAGEM -->
+      <!-- IMAGEM LATERAL -->
       <div class="login-image"></div>
 
       <!-- FORMULÁRIO -->
-      <div class="login-form-area">
-        <h1>Login</h1>
-        <p>
-          Sejam bem-vindos à plataforma de sócios do maior clube do Nordeste
-        </p>
+      <div class="login-form">
 
-        <form id="formLogin" autocomplete="on">
+        <img src="assets/img/logo-sport.png" alt="Logo Sport" class="logo">
 
-          <!-- EMAIL -->
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <div class="input-wrapper">
-              <span class="material-icons">mail</span>
-              <input 
-                type="email" 
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-                autocomplete="email"
-              >
-            </div>
-            <small class="error-message"></small>
+        <h1>Portal do Leão 🦁</h1>
+        <p>Área oficial de sócios do <strong>Maior do Nordeste</strong></p>
+
+        <form id="formLogin">
+
+          <div class="input-group">
+            <span class="material-icons">mail</span>
+            <input type="email" placeholder="Digite seu e-mail" required>
           </div>
 
-          <!-- SENHA -->
-          <div class="form-group">
-            <label for="password">Senha</label>
-            <div class="input-wrapper">
-              <span class="material-icons">lock</span>
-              <input 
-                type="password" 
-                id="password"
-                name="password"
-                placeholder="Digite sua senha"
-                required
-                minlength="8"
-                autocomplete="current-password"
-              >
-              <span class="material-icons toggle-password" id="togglePassword">
-                visibility
-              </span>
-            </div>
-            <small class="error-message"></small>
+          <div class="input-group">
+            <span class="material-icons">lock</span>
+            <input type="password" placeholder="Digite sua senha" required minlength="8">
           </div>
 
-          <!-- OPÇÕES -->
-          <div class="form-options">
-            <label class="remember">
-              <input type="checkbox" id="remember">
+          <div class="options">
+            <label>
+              <input type="checkbox">
               Lembrar de mim
             </label>
 
-            <a href="#" class="forgot-password">
-              Esqueci a senha
-            </a>
+            <a href="#">Esqueci a senha</a>
           </div>
 
-          <!-- BOTÃO -->
-          <button type="submit" class="btn-login">
-            Entrar
-          </button>
+          <button type="submit" class="btn-login">Entrar</button>
 
         </form>
+
       </div>
 
     </section>
+
   </main>
 
 </body>

@@ -1,166 +1,149 @@
 @charset "UTF-8";
 
-/* Paleta Sport */
+/* PALETA SPORT */
 :root {
-    --vermelho-principal: #F20519;
-    --vermelho-secundario: #D92332;
-    --ouro: #F2CB05;
-    --amarelo: #F2E205;
-    --preto: #0D0D0D;
-    --branco: #ffffff;
-    --cinza-claro: #f5f5f5;
+  --vermelho: #F20519;
+  --vermelho-escuro: #D92332;
+  --preto: #0D0D0D;
+  --ouro: #F2CB05;
+  --branco: #ffffff;
+  --cinza: #f4f4f4;
 }
 
-/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, var(--vermelho-principal), var(--vermelho-secundario));
+  height: 100vh;
+  background: url("img/ilha-retiro-lotada.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Container principal */
+/* Overlay escuro */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
 .login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
-/* Card de login */
 .login-card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: var(--branco);
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease;
+  display: flex;
+  width: 900px;
+  max-width: 95%;
+  background: var(--branco);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 
-.login-card:hover {
-    transform: scale(1.02);
-}
-
-/* Imagem do topo */
+/* IMAGEM LATERAL */
 .login-image {
-    background: url("img/imagens-jogadores-sport.jpg") no-repeat center;
-    background-size: cover;
+  flex: 1;
+  background: url("img/imagens-jogadores-sport.jpg") no-repeat center;
+  background-size: cover;
 }
 
-/* Área do formulário */
-.login-form-area {
-    padding: 25px;
+/* FORMULÁRIO */
+.login-form {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.login-form-area h1 {
-    text-align: center;
-    color: var(--preto);
-    margin-bottom: 10px;
+.logo {
+  width: 80px;
+  margin: 0 auto 15px auto;
+  display: block;
 }
 
-.login-form-area p {
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
-    margin-bottom: 20px;
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: var(--preto);
 }
 
-/* Grupo de campo */
-.form-group {
-    margin-bottom: 15px;
+.login-form p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
 }
 
-.form-group label {
-    font-size: 0.85em;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
+/* INPUTS */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: var(--cinza);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
 }
 
-/* Wrapper do input */
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    background-color: var(--cinza-claro);
-    border-radius: 10px;
-    padding: 0 10px;
-    border: 2px solid transparent;
-    transition: 0.3s;
+.input-group:focus-within {
+  border-color: var(--vermelho);
+  background: #fff;
 }
 
-.input-wrapper:focus-within {
-    border-color: var(--ouro);
-    background-color: var(--branco);
+.input-group span {
+  margin-right: 10px;
+  color: var(--vermelho);
 }
 
-/* Ícones */
-.input-wrapper .material-icons {
-    color: var(--vermelho-principal);
-    margin-right: 8px;
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.95rem;
 }
 
-/* Input */
-.input-wrapper input {
-    border: none;
-    outline: none;
-    background: transparent;
-    width: 100%;
-    height: 45px;
-    font-size: 0.95em;
+/* OPÇÕES */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
 }
 
-/* Olho da senha */
-.toggle-password {
-    cursor: pointer;
+.options a {
+  text-decoration: none;
+  color: var(--vermelho);
 }
 
-/* Opções */
-.form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85em;
-    margin: 10px 0 20px;
+.options a:hover {
+  text-decoration: underline;
 }
 
-.remember {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.forgot-password {
-    text-decoration: none;
-    color: var(--vermelho-principal);
-    font-weight: 500;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-/* Botão login */
+/* BOTÃO */
 .btn-login {
-    width: 100%;
-    height: 45px;
-    background: var(--preto);
-    color: var(--branco);
-    border: none;
-    border-radius: 10px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 14px;
+  background: var(--vermelho);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-login:hover {
-    background: var(--vermelho-principal);
+  background: var(--vermelho-escuro);
+  transform: translateY(-2px);
 }
