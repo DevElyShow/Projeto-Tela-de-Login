@@ -14,7 +14,7 @@ https://develyshow.github.io/Projeto-Tela-de-Login/
 
 ## 📸 Preview do Projeto
 
-![Preview da Tela de Login](./imagens/Screen.png)
+![Preview da Tela de Login](assets/img/Screen.png)
 
 ---
 
