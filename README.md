@@ -8,7 +8,7 @@ A aplicação simula o fluxo de autenticação de um portal, realizando **valida
 ## 🌐 Deploy do Projeto
 
 🔗 Acesse o projeto online:  
-https://develyshow.github.io/Projeto-Tela-de-Login/
+(https://projeto-tela-de-login-sepia.vercel.app/)
 
 ---
 
