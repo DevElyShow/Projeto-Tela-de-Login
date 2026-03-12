@@ -1,7 +1,7 @@
 const form = document.getElementById("loginForm");
 const message = document.getElementById("message");
 
-// Usuário fake (simulação realista)
+// Usuário fake
 const fakeUser = {
   email: "torcedor@sport.com",
   password: "123456"
